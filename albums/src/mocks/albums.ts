@@ -2,6 +2,7 @@ export default [
   {
     title: 'Tailor Swift',
     artist: 'Tailor Swift',
+    url: 'https://www.amazon.com.br/1989-Jewel-Box-Taylor-Swift/dp/B00OBRI7FS',
     thumbnail_image:
       'https://media1.popsugar-assets.com/files/thumbor/0ebv7kCHr0T-_O3RfQuBoYmUg1k/475x60:1974x1559/fit-in/500x500/filters:format_auto-!!-:strip_icc-!!-/2019/09/09/023/n/1922398/9f849ffa5d76e13d154137.01128738_/i/Taylor-Swift.jpg',
     image:
@@ -10,6 +11,7 @@ export default [
   {
     title: 'Fearless',
     artist: 'Tailor Swift',
+    url: 'https://www.amazon.com.br/1989-Jewel-Box-Taylor-Swift/dp/B00OBRI7FS',
     thumbnail_image:
       'https://media1.popsugar-assets.com/files/thumbor/0ebv7kCHr0T-_O3RfQuBoYmUg1k/475x60:1974x1559/fit-in/500x500/filters:format_auto-!!-:strip_icc-!!-/2019/09/09/023/n/1922398/9f849ffa5d76e13d154137.01128738_/i/Taylor-Swift.jpg',
     image:
@@ -18,6 +20,7 @@ export default [
   {
     title: 'Speak Now',
     artist: 'Tailor Swift',
+    url: 'https://www.amazon.com.br/1989-Jewel-Box-Taylor-Swift/dp/B00OBRI7FS',
     thumbnail_image:
       'https://media1.popsugar-assets.com/files/thumbor/0ebv7kCHr0T-_O3RfQuBoYmUg1k/475x60:1974x1559/fit-in/500x500/filters:format_auto-!!-:strip_icc-!!-/2019/09/09/023/n/1922398/9f849ffa5d76e13d154137.01128738_/i/Taylor-Swift.jpg',
     image:
@@ -26,6 +29,7 @@ export default [
   {
     title: 'Red',
     artist: 'Tailor Swift',
+    url: 'https://www.amazon.com.br/1989-Jewel-Box-Taylor-Swift/dp/B00OBRI7FS',
     thumbnail_image:
       'https://media1.popsugar-assets.com/files/thumbor/0ebv7kCHr0T-_O3RfQuBoYmUg1k/475x60:1974x1559/fit-in/500x500/filters:format_auto-!!-:strip_icc-!!-/2019/09/09/023/n/1922398/9f849ffa5d76e13d154137.01128738_/i/Taylor-Swift.jpg',
     image:
@@ -34,6 +38,7 @@ export default [
   {
     title: '1989',
     artist: 'Tailor Swift',
+    url: 'https://www.amazon.com.br/1989-Jewel-Box-Taylor-Swift/dp/B00OBRI7FS',
     thumbnail_image:
       'https://media1.popsugar-assets.com/files/thumbor/0ebv7kCHr0T-_O3RfQuBoYmUg1k/475x60:1974x1559/fit-in/500x500/filters:format_auto-!!-:strip_icc-!!-/2019/09/09/023/n/1922398/9f849ffa5d76e13d154137.01128738_/i/Taylor-Swift.jpg',
     image:

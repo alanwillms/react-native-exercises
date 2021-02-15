@@ -3,4 +3,5 @@ export default interface Album {
   artist: string;
   image: string;
   thumbnail_image: string;
+  url: string;
 }
