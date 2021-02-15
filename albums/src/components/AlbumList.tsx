@@ -1,8 +1,9 @@
 import React, {Dispatch, SetStateAction, useEffect, useState} from 'react';
-import {StyleSheet, View} from 'react-native';
+import {StyleSheet, ScrollView} from 'react-native';
 import axios from 'axios';
 import AlbumDetail from './AlbumDetail';
 import Album from '../types/Album';
+import mockedAlbums from '../mocks/albums';
 
 const AlbumList = () => {
   // setState
@@ -19,20 +20,14 @@ const AlbumList = () => {
       .catch((err) => {
         console.log(err);
         // The above api is no longer working
-        setAlbums([
-          {title: 'Tailor Swift'},
-          {title: 'Fearless'},
-          {title: 'Speak Now'},
-          {title: 'Red'},
-          {title: '1989'},
-        ]);
+        setAlbums(mockedAlbums);
       });
   }, []);
 
   const renderAlbums = () =>
     albums.map((album) => <AlbumDetail key={album.title} album={album} />);
 
-  return <View>{renderAlbums()}</View>;
+  return <ScrollView>{renderAlbums()}</ScrollView>;
 };
 
 const styles = StyleSheet.create({});
