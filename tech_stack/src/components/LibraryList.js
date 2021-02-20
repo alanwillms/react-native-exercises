@@ -10,7 +10,7 @@ const LibraryList = () => {
     <FlatList
       data={libraries}
       renderItem={({item: library}) => <ListItem library={library} />}
-      keyExtractor={(library) => library.id}
+      keyExtractor={(library) => `${library.id}`}
     />
   );
 };

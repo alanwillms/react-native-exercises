@@ -1,29 +1,46 @@
 import React from 'react';
-import {StyleSheet, Text, TouchableWithoutFeedback, View} from 'react-native';
+import {
+  StyleSheet,
+  Text,
+  TouchableWithoutFeedback,
+  View,
+  LayoutAnimation,
+  Platform,
+  UIManager,
+} from 'react-native';
 import {useSelector, useDispatch} from 'react-redux';
 import {CardSection} from './common';
 
+if (
+  Platform.OS === 'android' &&
+  UIManager.setLayoutAnimationEnabledExperimental
+) {
+  UIManager.setLayoutAnimationEnabledExperimental(true);
+}
+
 const ListItem = ({library}) => {
   const {id, title, description} = library;
-  const selectedLibraryId = useSelector((state) => state.selectedLibraryId);
+  const expanded = useSelector((state) => state.selectedLibraryId === id);
   const dispatch = useDispatch();
 
   return (
     <TouchableWithoutFeedback
-      onPress={() =>
+      onPress={() => {
+        // we dont have componentWillUpdate
+        LayoutAnimation.configureNext(LayoutAnimation.Presets.spring);
         dispatch({
           type: 'select_library',
           payload: id,
-        })
-      }>
+        });
+      }}>
       <View>
         <CardSection>
           <Text style={styles.title}>{title}</Text>
         </CardSection>
 
-        {selectedLibraryId === id ? (
+        {expanded ? (
           <CardSection>
-            <Text style={styles.title}>{description}</Text>
+            <Text style={styles.description}>{description}</Text>
           </CardSection>
         ) : null}
       </View>
@@ -34,6 +51,9 @@ const ListItem = ({library}) => {
 const styles = StyleSheet.create({
   title: {
     fontSize: 18,
+    paddingHorizontal: 15,
+  },
+  description: {
     paddingHorizontal: 15,
   },
 });
