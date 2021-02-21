@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import {Button, Card, CardSection, Input} from './common';
 import {StyleSheet, Text} from 'react-native';
 import Spinner from './common/Spinner';
@@ -7,25 +7,10 @@ import {emailChanged, loginUser, passwordChanged} from '../actions';
 import {RootState} from '../reducers';
 
 const LoginForm = () => {
-  const [error, setError] = useState('');
-  const [loading, setLoading] = useState(false);
-
   const dispatch = useDispatch();
-  const {email, password} = useSelector((state: RootState) => state.auth);
-
-  const onLoginSuccess = () => {
-    //setError('');
-    //setEmail('');
-    //setPassword('');
-    //setLoading(false);
-  };
-
-  const onLoginError = () => {
-    //setError('Failed to sign in or sign up');
-    //setLoading(false);
-  };
-
-  const onButtonPress = () => {};
+  const {email, password, error, loading} = useSelector(
+    (state: RootState) => state.auth,
+  );
 
   return (
     <Card>
