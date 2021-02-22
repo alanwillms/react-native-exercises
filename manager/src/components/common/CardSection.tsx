@@ -1,9 +1,13 @@
 import React from 'react';
-import {StyleSheet, Text, View} from 'react-native';
+import {StyleProp, StyleSheet, Text, View, ViewStyle} from 'react-native';
 import {AuxProps} from '../../types/AuxProps';
 
-const CardSection = ({children}: AuxProps) => {
-  return <View style={styles.container}>{children}</View>;
+interface CardSectionProps extends AuxProps {
+  style?: StyleProp<ViewStyle>;
+}
+
+const CardSection = ({children, style}: CardSectionProps) => {
+  return <View style={[styles.container, style]}>{children}</View>;
 };
 
 const styles = StyleSheet.create({
