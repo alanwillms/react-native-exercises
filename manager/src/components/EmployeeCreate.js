@@ -1,11 +1,24 @@
 import React from 'react';
-import {View, Text} from 'react-native';
+import {Button} from 'react-native';
+import {Card, CardSection, Input} from './common';
 
 const EmployeeCreate = () => {
   return (
-    <View>
-      <Text>EmployeeCreate</Text>
-    </View>
+    <Card>
+      <CardSection>
+        <Input label="Name" placeholder="Jane Doe" />
+      </CardSection>
+
+      <CardSection>
+        <Input label="Phone" placeholder="555-555-5555" />
+      </CardSection>
+
+      <CardSection />
+
+      <CardSection>
+        <Button>Create</Button>
+      </CardSection>
+    </Card>
   );
 };
 
