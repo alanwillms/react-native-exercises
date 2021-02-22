@@ -13,7 +13,7 @@ import {
   FIREBASE_MESSAGING_SENDER_ID,
   FIREBASE_APP_ID,
 } from '@env';
-import LoginForm from './components/LoginForm';
+import Router from './Router';
 
 const App = () => {
   // componentWillMount
@@ -32,8 +32,7 @@ const App = () => {
     <ReduxProvider
       store={createStore(reducers, {}, applyMiddleware(ReduxThunk))}>
       <View>
-        <Text>Hello</Text>
-        <LoginForm />
+        <Router />
       </View>
     </ReduxProvider>
   );
