@@ -1,4 +1,8 @@
-import {EMPLOYEE_UPDATE} from '../actions/types';
+import {
+  EMPLOYEE_UPDATE,
+  EMPLOYEE_CREATE,
+  EMPLOYEES_SAVE_SUCCESS,
+} from '../actions/types';
 
 const initialState = {
   name: '',
@@ -12,6 +16,10 @@ export default (state = initialState, action) => {
   switch (type) {
     case EMPLOYEE_UPDATE:
       return {...state, [payload.prop]: payload.value};
+    case EMPLOYEE_CREATE:
+      return initialState;
+    case EMPLOYEES_SAVE_SUCCESS:
+      return initialState;
     default:
       return state;
   }

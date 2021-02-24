@@ -12,11 +12,13 @@
   "dependencies": {
     "@react-native-community/picker": "^1.8.1",
     "@types/react-native": "^0.63.50",
+    "@types/react-native-communications": "^2.2.1",
     "@types/react-redux": "^7.1.16",
     "@types/redux": "^3.6.0",
     "firebase": "^8.2.9",
     "react": "16.13.1",
     "react-native": "0.63.4",
+    "react-native-communications": "^2.2.1",
     "react-native-dotenv": "^2.5.3",
     "react-redux": "^7.2.2",
     "redux": "^4.0.5",

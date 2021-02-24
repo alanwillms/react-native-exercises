@@ -1559,6 +1559,11 @@
   "resolved" "https://registry.npmjs.org/@types/prop-types/-/prop-types-15.7.3.tgz"
   "version" "15.7.3"
 
+"@types/react-native-communications@^2.2.1":
+  "integrity" "sha512-eTgJlMjrx825VuO+3y5rT4Xu3it6oH3i7Zck/QhJO3c8RM61nBp9lJ7BBI3Coc8nxweYkS6i1lkrPPmZOnNzNA=="
+  "resolved" "https://registry.npmjs.org/@types/react-native-communications/-/react-native-communications-2.2.1.tgz"
+  "version" "2.2.1"
+
 "@types/react-native@^0.63.50":
   "integrity" "sha512-jWxsHDG/AHEaOrqqcI0Cth0WdPsgyaJ1nel5pS0uCzpt2RjwtkvEUAfu39paPr4i+9oUUgbJq3vkVXaj7n8RdQ=="
   "resolved" "https://registry.npmjs.org/@types/react-native/-/react-native-0.63.50.tgz"
@@ -6143,6 +6148,11 @@
   "integrity" "sha512-NAnt2iGDXohE5LI7uBnLnqvLQMtzhkiAOLXTmv+qnF9Ky7xAPcX8Up/xWIhxvLVGJvuLiNc4xQLtuqDRzb4fSA=="
   "resolved" "https://registry.yarnpkg.com/react-is/-/react-is-17.0.1.tgz"
   "version" "17.0.1"
+
+"react-native-communications@^2.2.1":
+  "integrity" "sha1-eIO1ayCgAu63kMET+GFuqGksp5U="
+  "resolved" "https://registry.npmjs.org/react-native-communications/-/react-native-communications-2.2.1.tgz"
+  "version" "2.2.1"
 
 "react-native-dotenv@^2.5.3":
   "integrity" "sha512-Fibw5q6vy91aRwol7yO6U9Om+EyE7Vs4pO70AYGRkDuMkaQ4EIyYw9mmiPcKo6VFCwlpE8y1AZImxoKREFASXA=="
